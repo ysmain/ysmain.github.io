@@ -1,0 +1,229 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&family=Oswald:wght@400;500;600&display=swap');
+  
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat';
+}
+
+
+
+header{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    margin:0 auto;
+    background: #eaeaea;
+    padding:1em;
+  
+}
+
+nav ul{
+    list-style: none;
+    /* background: tomato; */
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 15px 0 15px
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#333;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 100px;
+}
+
+/* atf */
+#atf{
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 450px;
+    position: relative; 
+    color: white;
+}
+
+.background{
+    background: url('../assets/images/atf.jpg');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+/* backgroundとatf-contentはhtml状で囲まれてないので、それぞれ独立している。 */
+.atf-content{
+    width: 60%;
+    margin:0 0 0 auto;
+    padding: 100px 100px 0 0 ;
+    text-align: right;
+}
+
+.atf-content h1{
+    font-size: 50px;
+}
+
+.button{
+    padding: 0.5em 1em;
+    background: rgb(196, 167, 114);
+    border:none;
+    outline:none;
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    border-radius: 5px;
+    margin-top:10px;
+}
+
+
+/* about */
+#about{
+    width: 100%;
+    background:#eaeaea;
+}
+
+#about h2{
+    text-align: center ;
+    padding-top: 50px;
+}
+
+.about-content-0,
+.about-content-1,
+.about-content-2{
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px  0 50px 0;
+    overflow: auto;
+}
+
+.about-content-1 div{
+    float:left;
+    background: tomato;
+    margin-right: 15px;
+    width: 200px;
+    height: 200px; 
+}
+
+#about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about-content-2 div{
+    float:right;
+    background: thistle;
+    margin-left: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.about-content-1 p,
+.about-content-2 p{
+    text-align: justify;
+}
+
+.about-content-2 a{
+    float:right;
+}
+
+
+/* reservation */
+#reservation{
+    width: 100%;
+    overflow: auto;
+    padding:1em;
+    background: rgb(196, 167, 114);
+}
+
+
+#reservation h2{
+    text-align: center;
+    padding-top:50px;
+}
+
+#reservation label{
+    font-weight: bold;
+}
+
+.reservation-form{
+    width: 50%;
+    height: 100%;
+
+    float:left;
+}
+
+.reservation-form table{
+    margin:20px auto;
+    width: 70%;
+}
+
+.reservation-form td input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    outline:0;
+}
+
+.form-btn{
+    width: 100%;
+    text-align: center;
+    background: black;
+    color:white;
+}
+
+
+.reservation-table {
+    width: 50%;
+    height: 100%;
+    float: left;
+    top: 30px;
+}
+
+.reservation-table table{
+    margin: 20px auto;
+}
+
+.reservation-form table tr td,
+.reservation-table table tr td{
+    padding:10px;
+}
+
+.reservation-table table tr th{
+    padding:5px;
+    background: black;
+    color:white;
+}
+
+.even-data{
+    background: #d3d2d2;
+}
+
+.reserved{
+    background:yellowgreen;
+}
+.pending{
+   background:goldenrod;
+}
+footer{
+    width: 100%;
+    background: #eaeaea;
+    padding:1em;
+    text-align: center;
+    font-weight: bold;
+}
